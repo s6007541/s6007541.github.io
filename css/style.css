@@ -1307,25 +1307,25 @@ input[type="text"] {
 
 .noBorder {
   border:none !important;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .noBorder_rightpadding{
   border:none !important;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px;
 }
 
 .noBorder_orange {
   border:none !important;
-  font-size: 18px;
+  font-size: 20px;
   color: #FF9000;
 }
 
 .table_center {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 140%;
 }
 
 .table_publication {
@@ -1336,7 +1336,7 @@ input[type="text"] {
 
 .cell_publication {
   border:none !important;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px;
 }
 
