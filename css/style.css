@@ -1307,18 +1307,18 @@ input[type="text"] {
 
 .noBorder {
   border:none !important;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .noBorder_rightpadding{
   border:none !important;
-  font-size: 24px;
+  font-size: 18px;
   padding: 10px;
 }
 
 .noBorder_orange {
   border:none !important;
-  font-size: 24px;
+  font-size: 18px;
   color: #FF9000;
 }
 
