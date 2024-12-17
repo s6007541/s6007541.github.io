@@ -523,7 +523,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center;
   transition: all 0.3s ease-in-out;
   border: 2px solid rgba(255, 165, 0, 0.7); /* Light orange border */
-  margin: 10px;
+  margin: 0px;
   border-radius: 10px; /* Optional: rounded corners */
 }
 
@@ -541,12 +541,11 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   color: white;
-  padding: 15px 10px 10px 10px;
+  padding: 15px 5px 10px 5px;
   transition: all 0.3s ease-in-out;
   opacity: 1; /* Initially hidden */
   /* visibility: hidden; */
   background: rgba(73, 60, 43, 0.44); /* Semi-transparent background */
-
 }
 
 .project-box:hover .desc {
@@ -587,6 +586,7 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0; /* Initially hidden */
   visibility: hidden; /* Initially hidden */
   transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth reveal */
+  /* background-color: green; */
 }
 
 .project-box:hover .keywords {
