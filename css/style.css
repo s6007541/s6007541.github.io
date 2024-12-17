@@ -561,7 +561,7 @@ span.lastname{
   background-position: center;
   transition: all 0.3s ease-in-out;
   border: 2px solid rgba(255, 165, 0, 0.7); /* Light orange border */
-  margin: 0px;
+  margin: 20px 0;
   border-radius: 10px; /* Optional: rounded corners */
 }
 
