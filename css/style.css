@@ -487,6 +487,14 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 15px;
 }
 
+/* Optional: Orange highlight for the section heading */
+#fh5co-work h2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+
+}
 @keyframes backgroundAnimation {
   0% {
     background-position: 0% 50%;
