@@ -16,6 +16,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+
+}
+
+html {
+
+  scroll-behavior: smooth !important;
 }
 
 
@@ -270,7 +277,7 @@ h1, h2, h3, h4, h5, h6, figure {
   /* background-color: #7d6c8f; */
   color: #fff;
   padding: 50px 0;
-  border-radius: 15px;
+  border-radius: 0px;
   
 }
 
@@ -286,7 +293,8 @@ h1, h2, h3, h4, h5, h6, figure {
 /* Information List */
 .info {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .info-label {
@@ -298,6 +306,21 @@ h1, h2, h3, h4, h5, h6, figure {
 .info-value {
   font-size: 16px;
   color: #f9f9f9;
+}
+span.firstname{
+  font-size: 70px;
+  position: relative;
+  top: -10px;
+
+  /* background-color: green; */
+}
+
+span.lastname{
+  font-size: 40px;
+  position: relative;
+  bottom: 35px;
+  /* background-color: green; */
+
 }
 
 /* About Me Text */
@@ -484,9 +507,11 @@ h1, h2, h3, h4, h5, h6, figure {
 /* academic project */
 
 #fh5co-work {
-  background-color: #e79e59; /* Soft orange */
+  /* background-color: #e79e59; */
+  background: linear-gradient(90deg, #8c85cb 0%, #ffa078 100%);
+
   padding: 50px 0;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 /* Optional: Orange highlight for the section heading */
@@ -841,7 +866,7 @@ h1, h2, h3, h4, h5, h6, figure {
 /* contact */
 /* Background color for the contact section */
 #fh5co-contact.fh5co-bg-orange {
-	background-color: #deb373; /* Orange background */
+	background-color: #e79e59; /* Orange background */
 	color: white; /* White text for contrast */
   padding: 50px 0px 20px 0px;
 }
@@ -868,10 +893,181 @@ h1, h2, h3, h4, h5, h6, figure {
 
 /* Button styling */
 #fh5co-contact .btn-orange {
-	background-color: #e88000; /* A darker orange for the button */
+	background-color: #c96e00; /* A darker orange for the button */
 	color: white;
 }
 
 #fh5co-contact .btn-orange:hover {
-	background-color: #FF5722; /* A deeper orange on hover */
+	background-color: #d04115; /* A deeper orange on hover */
+}
+
+
+
+/* Navigation Bar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: #6261aad1; */
+  /* background-color: #e79e59d9; */
+  background: linear-gradient(90deg, #8c85cbe2 0%, #ffa178e2 100%);
+  z-index: 1000; /* Ensures the navbar stays on top of other content */
+  padding: 3px 0;
+  border-radius: 0;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.name {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  /* flex-grow: 1; */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  background-color: #ffc08c00;
+  color: white;
+  font-size: 18px;
+  padding: 12px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-btn:hover {
+  background-color: #575757;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-content {
+  margin-top : 4px;
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 100%; /* Position below the navbar */
+  /* background-color: #cd741b; */
+  background: linear-gradient(90deg, #8c85cbe2 0%, #ffa178e2 100%);
+  
+  width: 100vw; /* Make the dropdown span the full viewport width */
+  z-index: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  left: 0; /* Ensure it aligns with the left side of the viewport */
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+/* Show the dropdown when hovering the parent */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* news section */
+#news {
+  background-color: #fff;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  
+
+}
+/* Optional: Orange highlight for the section heading */
+#news h2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+
+#news-inner {
+  max-width : 600px;
+  background-color: rgb(255, 247, 234);
+  border-radius: 20px;
+  max-height:500px;
+  overflow-y: auto; /* Enables vertical scrolling if content exceeds the height */
+  margin: 0px 30px;
+  padding: 15px 10px;
+  position: relative; /* Needed for absolute positioning of fade effect */
+
+}
+
+/* Fade effect at the bottom */
+/* #news-inner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  pointer-events: none;
+} */
+
+
+.news-item {
+  background-color: #f9f9f9; /* Light background for individual news items */
+  padding: 20px 20px 1px 20px;
+  border-left: 5px solid #ff7f32; /* Orange left border to highlight news item */
+  border-radius: 8px;
+  margin: 10px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.news-item:last-child {
+  margin-bottom: 0;
+}
+
+.news-item .date {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff7f32; /* Orange color for the date */
+  margin-bottom: 10px;
+}
+
+.news-item .news-text {
+  font-size: 1.2em;
+  color: #333; /* Black color for the news content text */
+}
+
+.news-item .news-text strong {
+  color: #ff7f32; /* Orange color for highlighted text */
+}
+
+/* Hover Effect for News Items */
+.news-item:hover {
+  background-color: #f0f0f0; /* Slightly darker gray on hover */
+  cursor: pointer;
+}
+
+.news-item:hover .news-text {
+  color: #000000; /* Orange color on hover for text */
+}
+
+.news-item:hover .date {
+  color: #ff5722; /* Darker orange on hover for date */
 }
