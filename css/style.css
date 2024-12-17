@@ -448,6 +448,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .timeline-heading h3 {
   font-size: 1.8em;
   font-weight: bold;
+  padding-top :25px;
+
 }
 
 .timeline-body p {
@@ -555,7 +557,8 @@ h1, h2, h3, h4, h5, h6, figure {
 /* # publications */
 /* Main container for publications */
 #fh5co-publication {
-  padding: 60px 0;
+  padding-top: 10px;  
+  padding-bottom: 30px;  
   background-color: #f7f7f7;
 }
 
@@ -591,8 +594,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .cell_publication b {
   font-size: 24px;
   color: #333;
-  display: block;
-  margin-bottom: 10px;
+  /* display: block; */
+  /* margin-bottom: 1px; */
 }
 
 /* Author names and conference info */
