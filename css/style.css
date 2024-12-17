@@ -358,7 +358,8 @@ span.lastname{
 /* Social Media Icons */
 .fh5co-social-icons {
   list-style: none;
-  padding-right: 13px;
+  /* padding-left: 100px; */
+  /* background-color: green; */
 }
 
 .fh5co-social-icons li {
