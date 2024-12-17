@@ -968,7 +968,7 @@ span.lastname{
 
 /* Dropdown Menu Styling */
 .dropdown-content {
-  margin-top : 4px;
+  margin-top : 3px;
   display: none; /* Hide by default */
   position: absolute;
   top: 100%; /* Position below the navbar */
