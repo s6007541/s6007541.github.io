@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 /* About Section */
 #fh5co-about {
-  background: linear-gradient(90deg, #bba2cd 0%, #c08f7a 100%);
+  background: linear-gradient(90deg, #8c85cb 0%, #ffa078 100%);
 
   /* background-color: #7d6c8f; */
   color: #fff;
@@ -572,6 +572,7 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0; /* Initially hidden */
   visibility: hidden; /* Initially hidden */
   /* margin-top: 10px; */
+  padding: 0px 10px;
 }
 
 .project-box:hover .project-description {
