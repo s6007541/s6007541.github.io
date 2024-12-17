@@ -235,6 +235,7 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 40px;
     font-weight: bold;
     color: rgb(0, 0, 0);
+    padding-bottom : 30px;
 }
 
 .toc-list {
@@ -266,8 +267,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-about {
   background: linear-gradient(135deg, #e36e3c 0%, #000000 100%);
   color: #fff;
-  padding-top : 10px;
-  padding-bottom : 50px;
+  padding: 50px 0;
   border-radius: 15px;
   
 }
@@ -278,6 +278,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 36px;
   color: white;
   margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 /* Information List */
@@ -359,8 +360,7 @@ h1, h2, h3, h4, h5, h6, figure {
 /* Resume Section Styling */
 #fh5co-resume {
   background-color: #f9f9f9;
-  padding: 60px 0;
-  text-align:
+  padding: 50px 0;
 
 }
 
@@ -368,7 +368,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-resume h2 {
   font-family: 'Kaushan Script', cursive;
   font-size: 36px;
-  color: white;
+  color: rgb(0, 0, 0);
+  padding-bottom: 40px;
 }
 
 /* Centering the timeline */
@@ -448,7 +449,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .timeline-heading h3 {
   font-size: 1.8em;
   font-weight: bold;
-  padding-top :25px;
+  padding-top :2px;
 
 }
 
@@ -470,8 +471,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-work {
   background-color: #e79e59; /* Soft orange */
-  padding-bottom:40px;
-  padding-top : 10px;
+  padding: 50px 0;
   border-radius: 15px;
 }
 
@@ -500,6 +500,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-size: cover;
   background-position: center;
   transition: all 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
 .project-box:hover {
@@ -543,31 +544,29 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /* Optional: Orange highlight for the section heading */
-.fh5co-heading h2 {
+#fh5co-work h2 {
   font-family: 'Kaushan Script', cursive;
   font-size: 36px;
   color: rgb(255, 255, 255);
-  padding-bottom : 0px;
-  padding-top : 50px;
+  padding-bottom: 20px;
 
 }
-
 
 
 /* # publications */
 /* Main container for publications */
 #fh5co-publication {
-  padding-top: 10px;  
-  padding-bottom: 30px;  
+  padding: 50px 0;
   background-color: #f7f7f7;
 }
 
-/* Header styling for publication section */
-.fh5co-heading h2 {
+/* Optional: Orange highlight for the section heading */
+#fh5co-publication h2 {
+  font-family: 'Kaushan Script', cursive;
   font-size: 36px;
-  color: #333;
-  font-weight: bold;
-  margin-bottom: 40px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 20px;
+
 }
 
 /* Publication table styles */
@@ -687,14 +686,16 @@ h1, h2, h3, h4, h5, h6, figure {
 /* Main container for awards section */
 #fh5co-awards {
   background-color: #fff;
+  padding: 50px 0;
 }
 
-/* Header styling for awards section */
-.fh5co-heading h2 {
+/* Optional: Orange highlight for the section heading */
+#fh5co-awards h2 {
+  font-family: 'Kaushan Script', cursive;
   font-size: 36px;
-  color: #333;
-  font-weight: bold;
-  margin-bottom: 40px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 20px;
+
 }
 
 /* Styling for the award section */
@@ -767,6 +768,16 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-contact.fh5co-bg-orange {
 	background-color: #deb373; /* Orange background */
 	color: white; /* White text for contrast */
+  padding: 50px 0px 20px 0px;
+}
+
+/* Optional: Orange highlight for the section heading */
+#fh5co-contact h2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+
 }
 
 /* Text and heading color */
