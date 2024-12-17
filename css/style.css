@@ -491,42 +491,56 @@ h1, h2, h3, h4, h5, h6, figure {
   /* background-color: green; */
   padding-bottom: 20px;
 }
+
+
+/* Initial state of the project box */
 .project-box {
   position: relative;
   overflow: hidden;
   display: block;
-  height: 300px;
-  /* width: 300px; */
+  height: 200px; /* Initially only show the project title */
   background-size: cover;
   background-position: center;
   transition: all 0.3s ease-in-out;
-  border-radius: 10px;
+  border: 2px solid rgba(255, 165, 0, 0.7); /* Light orange border */
+  margin: 10px;
+  border-radius: 10px; /* Optional: rounded corners */
 }
 
 .project-box:hover {
   transform: scale(1.05);
-  /* border-color: rgba(255, 140, 0, 0.9); */
+  border-color: rgba(255, 140, 0, 0.9); /* Darker orange on hover */
+  height: 300px; /* Increase height on hover to show description and keywords */
 }
 
 /* Background and text for the description box */
 .project-box .desc {
+  height : 150px;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   right: 0;
-  background: rgba(101, 75, 42, 0.7); /* Semi-transparent orange */
   color: white;
-  padding: 15px;
+  padding: 15px 10px 10px 10px;
   transition: all 0.3s ease-in-out;
+  opacity: 1; /* Initially hidden */
+  /* visibility: hidden; */
+  background: rgba(73, 60, 43, 0.44); /* Semi-transparent background */
+
 }
 
 .project-box:hover .desc {
-  background: rgba(255, 140, 0, 0.907); /* Darker orange on hover */
+  height : auto;
+  opacity: 1; /* Show description on hover */
+  bottom: 0px;
+  visibility: visible; /* Ensure visibility on hover */
+  background: rgba(73, 60, 43, 0.9); /* Semi-transparent background */
+
 }
 
 .project-box h3 {
   font-size: 22px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   color: white; /* Keep the text white for contrast */
 }
 
@@ -534,6 +548,47 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 14px;
   line-height: 1.5;
   color: white; /* White text for better readability */
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  /* margin-top: 10px; */
+}
+
+.project-box:hover .project-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: white; /* White text for better readability */
+  opacity: 1; /* Show keywords on hover */
+  visibility: visible; /* Ensure visibility on hover */
+  /* margin-top: 10px; */
+}
+
+/* Keywords section styling */
+.keywords {
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth reveal */
+}
+
+.project-box:hover .keywords {
+  opacity: 1; /* Show keywords on hover */
+  visibility: visible; /* Ensure visibility on hover */
+}
+
+.keyword-btn {
+  display: inline-block;
+  background-color: #ff8c00; /* Dark orange */
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 15px; /* Rounded button style */
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.keyword-btn:hover {
+  background-color: #ffa500; /* Light orange on hover */
+  color: #000; /* Black text on hover */
 }
 
 /* Media query for smaller screens */
@@ -541,16 +596,13 @@ h1, h2, h3, h4, h5, h6, figure {
   .project-box {
       height: 200px;
   }
+  .project-box:hover {
+      height: 250px;
+  }
 }
 
-/* Optional: Orange highlight for the section heading */
-#fh5co-work h2 {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 36px;
-  color: rgb(255, 255, 255);
-  padding-bottom: 20px;
 
-}
+
 
 
 /* # publications */
