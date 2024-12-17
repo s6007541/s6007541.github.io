@@ -893,12 +893,12 @@ span.lastname{
 
 /* Button styling */
 #fh5co-contact .btn-orange {
-	background-color: #c96e00; /* A darker orange for the button */
+	background-color: #a59eff; /* A darker orange for the button */
 	color: white;
 }
 
 #fh5co-contact .btn-orange:hover {
-	background-color: #d04115; /* A deeper orange on hover */
+	background-color: #6d68fb; /* A deeper orange on hover */
 }
 
 
@@ -933,16 +933,21 @@ span.lastname{
 
 .dropdown {
   position: relative;
+  transition: 0.5s;
 }
 
 .dropdown-btn {
   background-color: #ffc08c00;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   padding: 12px 15px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  width: 70px;
+  transition: 0.5s;
+  position:relative;
+  top: 4px;
 }
 
 .dropdown-btn:hover {
@@ -981,6 +986,10 @@ span.lastname{
   display: block;
 }
 
+.dropdown-btn:hover .dropdown-content {
+  display: block;
+}
+
 
 /* news section */
 #news {
@@ -1005,14 +1014,14 @@ span.lastname{
 
 #news-inner {
   max-width : 600px;
-  background-color: rgb(255, 247, 234);
+  background-color: rgb(252, 247, 255);
   border-radius: 20px;
   max-height:500px;
   overflow-y: auto; /* Enables vertical scrolling if content exceeds the height */
   margin: 0px 30px;
   padding: 15px 10px;
   position: relative; /* Needed for absolute positioning of fade effect */
-
+  border: 3px dashed #d2cdff;
 }
 
 /* Fade effect at the bottom */
