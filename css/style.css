@@ -297,6 +297,16 @@ h1, h2, h3, h4, h5, h6, figure {
   text-align: center;
 }
 
+.social-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 13px;
+  position: relative;
+  bottom: 10px;
+
+}
+
 .info-label {
   font-weight: bold;
   font-size: 16px;
@@ -318,7 +328,7 @@ span.firstname{
 span.lastname{
   font-size: 40px;
   position: relative;
-  bottom: 35px;
+  bottom: 30px;
   /* background-color: green; */
 
 }
@@ -348,7 +358,7 @@ span.lastname{
 /* Social Media Icons */
 .fh5co-social-icons {
   list-style: none;
-  padding-left: 0;
+  padding-right: 13px;
 }
 
 .fh5co-social-icons li {
@@ -925,7 +935,7 @@ span.lastname{
 
 .name {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   /* flex-grow: 1; */
@@ -936,7 +946,7 @@ span.lastname{
   transition: 0.5s;
 }
 
-.dropdown-btn {
+.dropdown-bftn {
   background-color: #ffc08c00;
   color: white;
   font-size: 20px;
@@ -951,7 +961,7 @@ span.lastname{
 }
 
 .dropdown-btn:hover {
-  background-color: #575757;
+  background-color: #57575700;
 }
 
 /* Dropdown Menu Styling */
