@@ -107,8 +107,10 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  background: rgba(84, 46, 6, 0.634);
+  right: 0; 
+  background: rgba(61, 56, 103, 0.649);
+  /* background: linear-gradient(90deg, #8c85cb 0%, #ffa078 100%); */
+  /* test */
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -311,6 +313,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 }
 
+#social-2 i {
+  transition: all 0.3s ease;
+  color:rgb(237, 236, 236);
+}
+#social-2 i:hover {
+  transform: scale(1.1);
+  color:rgb(255, 255, 255);
+  
+}
+
+
 .info-label {
   font-weight: bold;
   font-size: 16px;
@@ -368,8 +381,20 @@ span.lastname{
 
 #social-1 {
   padding-right:20px;
-
+  
 }
+
+#social-1 i {
+  transition: all 0.3s ease;
+  color:rgb(237, 236, 236);
+}
+#social-1 i:hover {
+  transform: scale(1.1);
+  color:rgb(255, 255, 255);
+  
+}
+
+
 
 .fh5co-social-icons li {
   display: inline;
@@ -564,15 +589,16 @@ span.lastname{
   position: absolute;
   top: 10px;
   right: 15px;
-  color: white;
+  color: rgb(222, 220, 220);
   font-size: 30px; /* Make the GitHub icon size appropriate */
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   opacity: 0; /* Initially hidden */
   visibility: hidden; /* Initially hidden */
 }
 
 .github-link:hover {
-  color: #ff8c00; /* Change color to orange on hover */
+  color: white;
+  transform: scale(1.1);
 }
 
 .github-icon {
@@ -670,7 +696,7 @@ span.lastname{
 
 .keyword-btn {
   display: inline-block;
-  background-color: #ff8c00; /* Dark orange */
+  background-color: #ff6625; /* Dark orange */
   color: white;
   padding: 5px 10px;
   margin: 5px;
@@ -681,7 +707,7 @@ span.lastname{
 }
 
 .keyword-btn:hover {
-  background-color: #ffa500; /* Light orange on hover */
+  background-color: rgb(255, 148, 103); /* Light orange on hover */
   color: #000; /* Black text on hover */
 }
 
@@ -912,7 +938,7 @@ span.lastname{
 /* contact */
 /* Background color for the contact section */
 #fh5co-contact.fh5co-bg-orange {
-	background-color: #e79e59; /* Orange background */
+	background-color: #ffa178; /* Orange background */
 	color: white; /* White text for contrast */
   padding: 50px 0px 20px 0px;
 }
@@ -939,7 +965,7 @@ span.lastname{
 
 /* Button styling */
 #fh5co-contact .btn-orange {
-	background-color: #a59eff; /* A darker orange for the button */
+	background-color: #9f98e0; /* A darker orange for the button */
 	color: white;
 }
 
