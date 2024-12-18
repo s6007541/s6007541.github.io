@@ -1,6 +1,6 @@
   // Get the dropdown button and dropdown content
-  const dropdownButton = document.querySelector('.dropdown-btn');
-  const dropdownContent = document.querySelector('.dropdown-content');
+  const dropdownButton = document.querySelector('.sorn-dropdown-btn');
+  const dropdownContent = document.querySelector('.sorn-dropdown-content');
 
   // Function to toggle the dropdown menu
   dropdownButton.addEventListener('click', function(event) {

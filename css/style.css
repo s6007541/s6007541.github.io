@@ -945,22 +945,16 @@ span.lastname{
 
 
 /* Navigation Bar Styling */
-.navbar {
+.sorn-navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   background: linear-gradient(90deg, #8c85cbe2 0%, #ffa178e2 100%);
-  z-index: 1000; /* Ensures the navbar stays on top of other content */
-  padding: 3px 0;
+  z-index: 1000;
   border-radius: 0;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.navbar-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
+  box-sizing: border-box;
+  padding: 8px 0;  
 }
 
 .name {
@@ -970,31 +964,28 @@ span.lastname{
   text-align: center;
 }
 
-.dropdown {
-  position: relative;
+.sorn-dropdown {
+  position: absolute;
+
 }
 
-.dropdown-btn {
+.sorn-dropdown-btn {
   background-color: #ffc08c00;
   color: white;
   font-size: 20px;
-  padding: 12px 15px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
-  width: 70px;
-  position: relative;
-  top: 4px;
+  width: 50px;
   transition: transform 0.3s ease-in-out;
 }
 
-.dropdown-btn:hover {
+.sorn-dropdown-btn:hover {
   background-color: #57575700;
   transform: scale(1.2); /* Slightly enlarge the button on hover */
 }
 
 /* Dropdown Menu Styling */
-.dropdown-content {
+.sorn-dropdown-content {
   display: none; /* Hide by default */
   position: absolute;
   top: 100%; /* Position below the navbar */
@@ -1012,7 +1003,7 @@ span.lastname{
 }
 
 /* When dropdown content is visible */
-.dropdown-content.show {
+.sorn-dropdown-content.show {
   margin-top: 3px;
   max-height: 500px; /* Set a max-height to make the transition visible */
   opacity: 1; /* Make content visible */
@@ -1020,7 +1011,7 @@ span.lastname{
 }
 
 /* Style for the links in dropdown */
-.dropdown-content a {
+.sorn-dropdown-content a {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
@@ -1029,28 +1020,10 @@ span.lastname{
   transition: background-color 0.3s ease;
 }
 
-.dropdown-content a:hover {
+.sorn-dropdown-content a:hover {
   background-color: #575757;
 }
 
-/* Optional: Add a subtle bounce effect when dropdown appears */
-/* @keyframes bounceIn {
-  0% {
-    transform: scaleY(0.8);
-    opacity: 0;
-  }
-  50% {
-    transform: scaleY(1.05);
-  }
-  100% {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-}
-
-.dropdown-content.show {
-  animation: bounceIn 0.5s ease-out;
-} */
 
 
 /* news section */
