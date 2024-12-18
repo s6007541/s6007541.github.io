@@ -55,15 +55,16 @@ html {
 }
 
 a {
-  color: #FF9000;
+  color: #ff966a;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-a:hover, a:active, a:focus {
-  color: #FF9000;
+a:hover a:active, a:focus {
+  color: #ff5722;
   outline: none;
   text-decoration: none;
+
 }
 
 p {
@@ -315,7 +316,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #social-2 i {
   transition: all 0.3s ease;
-  color:rgb(237, 236, 236);
+  color:rgb(255, 255, 255);
 }
 #social-2 i:hover {
   transform: scale(1.1);
@@ -364,11 +365,13 @@ span.lastname{
 }
 
 #fh5co-about a {
-  color: #ff9c62;
+  color: #383838;
   text-decoration: none;
+  transition: all 0.0s ease;
 }
 
 #fh5co-about a:hover {
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -469,6 +472,14 @@ span.lastname{
 
 }
 
+.timeline-text a {
+  color : #ff966a;
+}
+
+.timeline-text a:hover {
+  color : #ff5722;
+}
+
 .timeline-panel {
   max-width: 700px;
   padding: 40px 20px 10px 15px;
@@ -543,7 +554,7 @@ span.lastname{
 /* Styling for major section */
 .major {
   font-size: 16px;
-  color: #FFA726; /* Orange color to match the theme */
+  color: #ff7236; /* Orange color to match the theme */
   margin-top: 5px;
   font-style: italic;
 }
@@ -621,14 +632,14 @@ span.lastname{
   background-size: cover;
   background-position: center;
   transition: all 0.3s ease-in-out;
-  border: 2px solid rgba(255, 165, 0, 0.7); /* Light orange border */
+  border: 2px solid #aeaeae; /* Light orange border */
   margin: 20px 0;
   border-radius: 10px; /* Optional: rounded corners */
 }
 
 .project-box:hover {
   transform: scale(1.05);
-  border-color: rgba(255, 140, 0, 0.9); /* Darker orange on hover */
+  border-color: #cbcbcb; /* Darker orange on hover */
   height: 300px; /* Increase height on hover to show description and keywords */
 }
 
@@ -658,6 +669,7 @@ span.lastname{
 
 .project-box h3 {
   font-size: 22px;
+  font-weight: bold;
   /* margin-bottom: 5px; */
   color: white; /* Keep the text white for contrast */
 }
@@ -696,7 +708,7 @@ span.lastname{
 
 .keyword-btn {
   display: inline-block;
-  background-color: #ff6625; /* Dark orange */
+  background-color: #e8662e; /* Dark orange */
   color: white;
   padding: 5px 10px;
   margin: 5px;
@@ -707,7 +719,7 @@ span.lastname{
 }
 
 .keyword-btn:hover {
-  background-color: rgb(255, 148, 103); /* Light orange on hover */
+  background-color: rgb(254, 160, 120); /* Light orange on hover */
   color: #000; /* Black text on hover */
 }
 
@@ -784,12 +796,13 @@ span.lastname{
 
 /* Link styling */
 .cell_publication a {
-  color: #FFA726;
+  color: #ff966a;
   text-decoration: none;
   margin-right: 10px;
 }
 
 .cell_publication a:hover {
+  color: #ff5722;
   text-decoration: underline;
 }
 
@@ -903,7 +916,7 @@ span.lastname{
 /* Award date styling */
 .award-item .award-date {
   font-size: 16px;
-  color: #FFA726;
+  color: #ff5722;
   margin-bottom: 10px;
 }
 
@@ -938,7 +951,7 @@ span.lastname{
 /* contact */
 /* Background color for the contact section */
 #fh5co-contact.fh5co-bg-orange {
-	background-color: #ffa178; /* Orange background */
+	background-color: #ff966a; /* Orange background */
 	color: white; /* White text for contrast */
   padding: 50px 0px 20px 0px;
 }
@@ -1089,19 +1102,6 @@ span.lastname{
   border: 3px dashed #d2cdff;
 }
 
-/* Fade effect at the bottom */
-/* #news-inner::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 500px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255));
-  pointer-events: none;
-} */
-
-
 .news-item {
   background-color: #f9f9f9; /* Light background for individual news items */
   padding: 20px 20px 1px 20px;
@@ -1142,6 +1142,11 @@ span.lastname{
   color: #000000; /* Orange color on hover for text */
 }
 
+.news-item:hover .news-text a {
+  color: #ff5722; /* Orange color on hover for text */
+}
+
 .news-item:hover .date {
   color: #ff5722; /* Darker orange on hover for date */
 }
+
