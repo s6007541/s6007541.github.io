@@ -297,11 +297,11 @@ h1, h2, h3, h4, h5, h6, figure {
   text-align: center;
 }
 
-.social-2 {
+#social-2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 13px;
+  padding-right: 15px;
   position: relative;
   bottom: 10px;
 
@@ -360,6 +360,11 @@ span.lastname{
   list-style: none;
   /* padding-left: 100px; */
   /* background-color: green; */
+}
+
+#social-1 {
+  padding-right:20px;
+
 }
 
 .fh5co-social-icons li {
