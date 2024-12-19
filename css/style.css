@@ -109,8 +109,11 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0; 
-  background: rgba(61, 56, 103, 0.649);
-  /* background: linear-gradient(90deg, #8c85cb 0%, #ffa078 100%); */
+  /* background: rgba(61, 56, 103, 0.649); */
+  /* background-color: #b46a53bc; */
+  background-color: #a2697b95;
+
+  /* first bg */
   /* test */
 }
 #fh5co-header .display-t,
@@ -978,12 +981,12 @@ span.lastname{
 
 /* Button styling */
 #fh5co-contact .btn-orange {
-	background-color: #9f98e0; /* A darker orange for the button */
+	background-color: #6d68fb; /* A darker orange for the button */
 	color: white;
 }
 
 #fh5co-contact .btn-orange:hover {
-	background-color: #6d68fb; /* A deeper orange on hover */
+	background-color: #9f98e0; /* A deeper orange on hover */
 }
 
 
