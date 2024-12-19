@@ -658,7 +658,8 @@ span.lastname{
   transition: all 0.3s ease-in-out;
   opacity: 1; /* Initially hidden */
   /* visibility: hidden; */
-  background: rgba(73, 60, 43, 0.44); /* Semi-transparent background */
+  background: #6864b7a3; /* Semi-transparent background */
+
 }
 
 .project-box:hover .desc {
@@ -666,7 +667,7 @@ span.lastname{
   opacity: 1; /* Show description on hover */
   bottom: 0px;
   visibility: visible; /* Ensure visibility on hover */
-  background: rgba(73, 60, 43, 0.9); /* Semi-transparent background */
+  background: #6864b7eb; /* Semi-transparent background */
 
 }
 
@@ -685,6 +686,7 @@ span.lastname{
   visibility: hidden; /* Initially hidden */
   /* margin-top: 10px; */
   padding: 0px 10px;
+
 }
 
 .project-box:hover .project-description {
@@ -711,7 +713,7 @@ span.lastname{
 
 .keyword-btn {
   display: inline-block;
-  background-color: #e8662e; /* Dark orange */
+  background-color: #ff7b43; /* Dark orange */
   color: white;
   padding: 5px 10px;
   margin: 5px;
