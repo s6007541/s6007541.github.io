@@ -658,8 +658,8 @@ span.lastname{
   transition: all 0.3s ease-in-out;
   opacity: 1; /* Initially hidden */
   /* visibility: hidden; */
-  background: #6864b7a3; /* Semi-transparent background */
-
+  /* background: #6864b7a3; */
+  background: #2b2b2bb1;
 }
 
 .project-box:hover .desc {
@@ -667,8 +667,8 @@ span.lastname{
   opacity: 1; /* Show description on hover */
   bottom: 0px;
   visibility: visible; /* Ensure visibility on hover */
-  background: #6864b7eb; /* Semi-transparent background */
-
+  /* background: #6864b7eb; */
+  background: #000000c8;
 }
 
 .project-box h3 {
