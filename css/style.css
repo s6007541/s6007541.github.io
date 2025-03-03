@@ -552,6 +552,12 @@ span.lastname{
 .timeline-body p {
   font-size: 1em;
   color: #555;
+  margin : 0;
+}
+
+.summa-cum-laude {
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 /* Styling for major section */
