@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* Template Style 
 *
 * ======================================================= */
 /* Global Styles */
@@ -60,7 +60,7 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-a:hover a:active, a:focus {
+a:hover, a:active, a:focus {
   color: #ff5722;
   outline: none;
   text-decoration: none;
@@ -213,6 +213,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header .display-tc .profile-thumb,
 .fh5co-cover .display-tc .profile-thumb {
+  background-image: url(../images/Sorn_profile.jpg);
   background-size: cover !important;
   background-position: center center;
   background-repeat: no-repeat;
@@ -225,6 +226,13 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  -webkit-transition: background-image 0.3s ease-in-out;
+  -o-transition: background-image 0.3s ease-in-out;
+  transition: background-image 0.3s ease-in-out;
+}
+#fh5co-header .display-tc .profile-thumb:hover,
+.fh5co-cover .display-tc .profile-thumb:hover {
+  background-image: url(../images/Sorn_profile_painted.jpg);
 }
 #fh5co-header .display-tc .fh5co-social-icons li a,
 .fh5co-cover .display-tc .fh5co-social-icons li a {
@@ -1160,4 +1168,3 @@ span.lastname{
 .news-item:hover .date {
   color: #ff5722; /* Darker orange on hover for date */
 }
-
